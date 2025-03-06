@@ -1,0 +1,7 @@
+favorite_animal = input("What's your favorite animal? (cat/dog/other): ")
+if favorite_animal.lower() == "cat":
+    print("You must love independence and grace!")
+elif favorite_animal.lower() == "dog":
+    print("Loyalty and energy are your things!")
+else:
+    print("Every animal has its own unique charm!")
