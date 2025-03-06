@@ -1,0 +1,7 @@
+spell = input("Enter your magic spell: ")
+if spell == "abracadabra":
+    print("The spell works! You conjured a rabbit!")
+elif spell == "hocus pocus":
+    print("A mysterious fog appears around you!")
+else:
+    print("Nothing happens. Maybe try a different spell!")
