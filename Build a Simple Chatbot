@@ -1,0 +1,24 @@
+import random
+def get_response(message):
+    message = message.lower()
+    responses = {
+        "hi": "Hello there!",
+        "hello": "Hi! How can I help you today?",
+        "how are you": "I'm just a program, but I'm doing great!",
+        "what's your name": "I'm your friendly Python chatbot.",
+        "bye": "Goodbye! Have a great day!"
+    }
+    # Return a specific response or a default one
+    return responses.get(message, random.choice(["I didn't quite get that.", "Can you rephrase?", "Interesting... tell me more!"]))
+def chatbot():
+    print("Welcome to the Python Chatbot!")
+    user_name = input("What's your name? ")
+    print(f"Nice to meet you, {user_name}!")
+    while True:
+        user_message = input("You: ")
+        if user_message.lower() in ["bye", "exit", "quit"]:
+            print("Chatbot: Goodbye!")
+            break
+        response = get_response(user_message)
+        print("Chatbot:", response)
+chatbot()
