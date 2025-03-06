@@ -1,0 +1,7 @@
+# Exercise 3: Favorite Foods List
+# Create a list of your top 5 favorite foods
+favorite_foods = ["pizza", "sushi", "ice cream", "pasta", "tacos"]
+# Iterate over the list and print each food on a new line
+print("My Favorite Foods:")
+for food in favorite_foods:
+    print(food)
