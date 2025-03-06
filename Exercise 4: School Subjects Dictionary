@@ -1,0 +1,13 @@
+# Exercise 4: School Subjects Dictionary
+# Create a dictionary with school subjects as keys and grades as values
+subjects_grades = {
+    "Math": "A",
+    "Science": "B+",
+    "History": "A-",
+    "English": "B",
+    "Art": "A"
+}
+# Iterate over the dictionary and print each subject with its grade
+print("My School Subjects and Grades:")
+for subject, grade in subjects_grades.items():
+    print(subject + ":", grade)
