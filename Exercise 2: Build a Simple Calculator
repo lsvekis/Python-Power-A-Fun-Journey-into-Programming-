@@ -1,0 +1,18 @@
+# Exercise 2: Build a Simple Calculator
+# Get two numbers from the user and convert them to float for calculation
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+# Perform arithmetic operations
+sum_result = num1 + num2
+diff_result = num1 - num2
+prod_result = num1 * num2
+# Check for division by zero before dividing
+if num2 != 0:
+    quotient_result = num1 / num2
+else:
+    quotient_result = "Undefined (cannot divide by zero)"
+# Print the results
+print("Sum:", sum_result)
+print("Difference:", diff_result)
+print("Product:", prod_result)
+print("Quotient:", quotient_result)
