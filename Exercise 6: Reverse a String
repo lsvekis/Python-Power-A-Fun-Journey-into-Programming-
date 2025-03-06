@@ -1,0 +1,9 @@
+# Exercise 6: Reverse a String
+def reverse_string(s):
+    # Return the reversed string using slicing
+    return s[::-1]
+# Get a string from the user
+user_string = input("Enter a string to reverse: ")
+# Call the function and print the result
+reversed_string = reverse_string(user_string)
+print("Reversed string:", reversed_string)
