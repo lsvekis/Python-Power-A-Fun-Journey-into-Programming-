@@ -1,0 +1,24 @@
+print("Welcome to Mystery Mansion!")
+print("You wake up in a dimly lit foyer. There are two doors: one to your left and one to your right.")
+choice1 = input("Which door do you choose? (left/right): ").lower()
+if choice1 == "left":
+    print("You enter a library filled with ancient books.")
+    choice2 = input("Do you search the shelf or sit by the fireplace? (shelf/fireplace): ").lower()
+    if choice2 == "shelf":
+        print("You find a secret diary that reveals the mansion's mystery!")
+    elif choice2 == "fireplace":
+        print("A hidden passage behind the fireplace leads you to a treasure room!")
+    else:
+        print("Confused, you wander back to the foyer.")
+elif choice1 == "right":
+    print("You find a kitchen with a delicious aroma.")
+    choice2 = input("Do you open the fridge or check the pantry? (fridge/pantry): ").lower()
+    if choice2 == "fridge":
+        print("The fridge is full of magical potions! You drink one and feel super energized!")
+    elif choice2 == "pantry":
+        print("You discover a map of the mansion hidden among the spices!")
+    else:
+        print("Unable to decide, you sit down until you get hungry.")
+else:
+    print("You hesitate and remain in the foyer until the mansion grows silent.")
+print("Thank you for playing Mystery Mansion!")
