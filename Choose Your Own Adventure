@@ -1,0 +1,24 @@
+print("Welcome, brave adventurer, to your Choose Your Own Adventure game!")
+print("You find yourself at a crossroads in a mysterious forest.")
+# First decision
+path = input("Do you choose the 'sunny' path or the 'shadowy' path? (sunny/shadowy): ")
+if path.lower() == "sunny":
+    print("You walk along a bright, warm path filled with wildflowers.")
+    choice = input("You see a sparkling stream. Do you 'rest' by the water or 'continue' your journey? (rest/continue): ")
+    if choice.lower() == "rest":
+        print("You relax by the stream and gain magical energy. A gentle breeze tells you secrets of the forest.")
+    elif choice.lower() == "continue":
+        print("You keep walking and discover a hidden grove where fairies dance in the light.")
+    else:
+        print("Not sure what to do, you decide to sit and think, and soon, a wise owl offers you guidance.")
+elif path.lower() == "shadowy":
+    print("You step onto a dim, mysterious trail under towering trees.")
+    choice = input("You come across an old, creaky bridge. Do you 'cross' it or 'inspect' it closely? (cross/inspect): ")
+    if choice.lower() == "cross":
+        print("You carefully cross the bridge and find yourself in an enchanted clearing full of glowing mushrooms.")
+    elif choice.lower() == "inspect":
+        print("On inspection, you discover that the bridge hides a secret passage leading to an underground cavern of wonders!")
+    else:
+        print("Uncertain of your choice, you wait by the bridge until dusk, when magical fireflies light up your way home.")
+else:
+    print("Unable to decide, you sit at the crossroads until the forest slowly fades into darkness. Maybe next time!")
