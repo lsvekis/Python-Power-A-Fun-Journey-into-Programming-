@@ -1,0 +1,11 @@
+# Exercise 8: Palindrome Checker
+def is_palindrome(word):
+    # Check if the word is the same as its reverse
+    return word.lower() == word.lower()[::-1]
+# Get a word from the user
+word_to_check = input("Enter a word to check if it is a palindrome: ")
+# Determine if the word is a palindrome and print the result
+if is_palindrome(word_to_check):
+    print(word_to_check, "is a palindrome!")
+else:
+    print(word_to_check, "is not a palindrome.")
