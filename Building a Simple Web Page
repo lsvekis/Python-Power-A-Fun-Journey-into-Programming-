@@ -1,0 +1,17 @@
+# Define the content of your web page
+html_content = """
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Simple Web Page</title>
+</head>
+<body>
+    <h1>Welcome to My Web Page</h1>
+    <p>This page was generated using Python!</p>
+</body>
+</html>
+"""
+# Write the HTML content to a file
+with open("my_webpage.html", "w") as file:
+    file.write(html_content)
+print("Web page created successfully! Open 'my_webpage.html' in your browser to see it.")
