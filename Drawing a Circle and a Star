@@ -1,0 +1,13 @@
+import turtle
+artist = turtle.Turtle()
+# Draw a circle
+artist.circle(50)  # Circle with a radius of 50 pixels
+# Lift pen, move to new position, and draw a star
+artist.penup()
+artist.goto(-150, 0)
+artist.pendown()
+# Draw a star using a loop
+for i in range(5):
+    artist.forward(100)
+    artist.right(144)  # Angle that makes a star shape
+turtle.done()
