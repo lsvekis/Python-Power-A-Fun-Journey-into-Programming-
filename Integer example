@@ -1,0 +1,6 @@
+# Integer example
+my_number = 25
+print("Integer:", my_number)
+# Float example
+pi_value = 3.14159
+print("Float:", pi_value)
