@@ -1,0 +1,5 @@
+def add_numbers(a, b):
+    """Returns the sum of a and b."""
+    return a + b
+result = add_numbers(7, 3)
+print("7 + 3 =", result)
