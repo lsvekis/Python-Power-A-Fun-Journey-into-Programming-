@@ -1,0 +1,18 @@
+# Define the robot's starting position
+x, y = 0, 0
+def move_robot(direction, steps):
+    global x, y
+    if direction == "up":
+        y += steps
+    elif direction == "down":
+        y -= steps
+    elif direction == "right":
+        x += steps
+    elif direction == "left":
+        x -= steps
+    print(f"Robot moved {direction} by {steps} steps. New position: ({x}, {y})")
+# Simulate a few moves
+move_robot("up", 5)
+move_robot("right", 3)
+move_robot("down", 2)
+move_robot("left", 4)
