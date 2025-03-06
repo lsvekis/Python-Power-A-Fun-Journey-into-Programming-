@@ -1,0 +1,24 @@
+print("Welcome to the Python Quiz!")
+score = 0
+# Question 1
+answer = input("What function reads user input in Python? ").lower()
+if answer == "input":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect. The correct answer is 'input'.")
+# Question 2
+answer = input("Which keyword is used for conditional statements? ").lower()
+if answer == "if":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect. The answer is 'if'.")
+# Question 3
+answer = input("What module is used for generating random numbers? ").lower()
+if answer == "random":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect. The correct answer is 'random'.")
+print("Quiz over! Your score is:", score)
