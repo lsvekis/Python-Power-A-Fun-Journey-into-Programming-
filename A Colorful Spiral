@@ -1,0 +1,14 @@
+import turtle
+import random
+# Create a turtle
+spiral = turtle.Turtle()
+spiral.speed(0)  # Fastest drawing speed
+spiral.width(2)
+# List of colors for randomness
+colors = ["red", "green", "blue", "orange", "purple", "yellow"]
+# Draw a spiral pattern
+for i in range(100):
+    spiral.color(random.choice(colors))
+    spiral.forward(i * 2)  # Increase the length of each step
+    spiral.right(91)       # Slightly off a right angle creates a spiral
+turtle.done()
