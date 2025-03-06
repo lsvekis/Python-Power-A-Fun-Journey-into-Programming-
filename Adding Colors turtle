@@ -1,0 +1,10 @@
+import turtle
+colorful = turtle.Turtle()
+colorful.color("blue")       # Set the pen color to blue
+colorful.fillcolor("yellow") # Set the fill color to yellow
+colorful.begin_fill()
+for i in range(4):
+    colorful.forward(100)
+    colorful.right(90)
+colorful.end_fill()
+turtle.done()
