@@ -1,0 +1,8 @@
+# Exercise 1: Print Your Favorite Quote
+# Define your favorite quote and your name
+favorite_quote = "The only limit to our realization of tomorrow is our doubts of today."
+your_name = "Alex"
+# Combine your name with the quote
+personalized_quote = favorite_quote + " - " + your_name
+# Print the personalized quote
+print(personalized_quote)
