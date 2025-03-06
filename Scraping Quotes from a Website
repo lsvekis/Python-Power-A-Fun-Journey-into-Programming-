@@ -1,0 +1,13 @@
+import requests
+from bs4 import BeautifulSoup
+# Get the HTML content from a website designed for scraping
+url = "http://quotes.toscrape.com/"
+response = requests.get(url)
+html_content = response.text
+# Parse the HTML content using BeautifulSoup
+soup = BeautifulSoup(html_content, "html.parser")
+# Find all quote elements on the page
+quotes = soup.find_all("span", class_="text")
+print("Here are some quotes scraped from the website:\n")
+for quote in quotes:
+    print(quote.get_text())
