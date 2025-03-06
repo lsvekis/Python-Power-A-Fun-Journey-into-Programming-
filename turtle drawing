@@ -1,0 +1,11 @@
+import turtle
+# Create a turtle named Leo
+leo = turtle.Turtle()
+# Move Leo forward 100 pixels
+leo.forward(100)
+# Turn Leo right by 90 degrees
+leo.right(90)
+# Move Leo forward another 100 pixels
+leo.forward(100)
+# Finish drawing
+turtle.done()
