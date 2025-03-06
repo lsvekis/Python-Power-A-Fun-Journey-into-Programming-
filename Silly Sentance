@@ -1,0 +1,10 @@
+# Ask the user for different parts of speech
+adjective = input("Enter a fun adjective (e.g., crazy, shiny): ")
+noun = input("Enter a noun (e.g., unicorn, robot): ")
+verb = input("Enter a verb (e.g., dance, jump): ")
+place = input("Enter a place (e.g., park, spaceship): ")
+# Build the silly sentence
+silly_sentence = "The " + adjective + " " + noun + " decided to " + verb + " at the " + place + "!"
+# Display the result
+print("\nYour Silly Sentence:")
+print(silly_sentence)
