@@ -1,0 +1,24 @@
+import random
+# Lists with different options
+adjectives = ["silly", "brave", "mysterious", "sparkly", "daring"]
+creatures = ["dragon", "unicorn", "pirate", "robot", "mermaid"]
+verbs = ["dance", "sing", "juggle", "explore", "giggle"]
+# Dictionary mapping places to a description
+places = {
+    "Enchanted Forest": "a magical forest full of wonder",
+    "Mystic Mountain": "a high peak with secret caves",
+    "Sunny Beach": "a place with golden sand and blue waters",
+    "Haunted Castle": "an old castle with mysterious echoes",
+    "Secret Garden": "a hidden garden blooming with rare flowers"
+}
+# Randomly choose elements
+chosen_place = random.choice(list(places.keys()))
+chosen_adjective = random.choice(adjectives)
+chosen_creature = random.choice(creatures)
+chosen_verb = random.choice(verbs)
+# Construct the story
+story = (f"Once upon a time in {chosen_place}, {places[chosen_place]}, "
+         f"there was a {chosen_adjective} {chosen_creature} who loved to {chosen_verb} all day long.")
+# Print the story
+print("Your Funny Story:")
+print(story)
